@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ibeto | المدونة</title>
+  <meta name="description" content="مقالات وأفكار في تطوير الويب، التصميم، وتحسين الأداء." />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الرئيسية">Ibeto</a>
+      <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">القائمة</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">نبذة عني</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">الأعمال</a></li>
+          <li><a href="blog.html" class="is-active">المدونة</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">المدونة</h1>
+        <p class="hero__text">مساحة لمشاركة مقالات قصيرة حول الويب، التصميم، والأداء. يمكنك لاحقًا ربط كل بطاقة بصفحة مقال منفصلة.</p>
+        <div class="grid">
+          <article class="card">
+            <h3 class="card__title"><a href="#">مبادئ تصميم واجهة عربية مقروءة</a></h3>
+            <p class="card__text">اعتبارات اختيار الخطوط، التباين، والمسافات في الواجهات العربية.</p>
+            <p class="card__text" style="color:#94a3b8">5 دقائق قراءة — 2025-08-01</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title"><a href="#">تقنيات تسريع تحميل الصور</a></h3>
+            <p class="card__text">الصور WebP، خاصية lazy-loading، والتحجيم المناسب.</p>
+            <p class="card__text" style="color:#94a3b8">4 دقائق قراءة — 2025-07-21</p>
+          </article>
+          <article class="card">
+            <h3 class="card__title"><a href="#">أساسيات SEO لصفحات شخصية</a></h3>
+            <p class="card__text">عناوين وصفية، وسوم ALT، وبنية روابط نظيفة.</p>
+            <p class="card__text" style="color:#94a3b8">6 دقائق قراءة — 2025-07-10</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>اسمك الكامل</strong>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+      </div>
+      <ul class="social">
+        <li><a href="https://linkedin.com/in/username" aria-label="LinkedIn" rel="me">لينكدإن</a></li>
+        <li><a href="https://twitter.com/username" aria-label="Twitter" rel="me">تويتر</a></li>
+        <li><a href="https://instagram.com/447ei" aria-label="Instagram" rel="me">إنستغرام</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

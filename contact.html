@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ibeto | تواصل</title>
+  <meta name="description" content="نموذج تواصل بسيط ومعلومات الاتصال وروابط الشبكات الاجتماعية." />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الرئيسية">Ibeto</a>
+      <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">القائمة</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">نبذة عني</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">الأعمال</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="contact.html" class="is-active">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">تواصل معي</h1>
+        <div class="hero__grid">
+          <form id="contactForm" class="card" data-honeypot style="padding:18px" novalidate>
+            <div style="display:grid;gap:12px">
+              <label>
+                الاسم
+                <input id="name" type="text" name="name" required minlength="2" placeholder="اسمك الكامل" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0a0f1f;color:#e6e9ef" />
+              </label>
+              <label>
+                البريد الإلكتروني
+                <input id="email" type="email" name="email" required placeholder="name@example.com" style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0a0f1f;color:#e6e9ef" />
+              </label>
+              <label>
+                الرسالة
+                <textarea id="message" name="message" required minlength="10" rows="5" placeholder="رسالتك..." style="width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,.12);background:#0a0f1f;color:#e6e9ef"></textarea>
+              </label>
+              <!-- Honeypot -->
+              <input type="text" name="website" autocomplete="off" tabindex="-1" aria-hidden="true" style="position:absolute;opacity:0;height:0;width:0;pointer-events:none" />
+              <div id="formStatus" role="status" aria-live="polite" style="color:#94a3b8"></div>
+              <button id="sendBtn" class="btn btn--primary" type="submit">إرسال</button>
+            </div>
+          </form>
+
+          <div>
+            <div class="card" style="padding:18px;margin-bottom:16px">
+              <h2 class="card__title">معلومات الاتصال</h2>
+              <ul style="margin:0; padding-inline-start:16px; color:#cbd5e1">
+                <li>البريد: <a href="mailto:gsprrow868@gmail.com">gsprrow868@gmail.com</a></li>
+                <li>الهاتف: <a href="tel:+9640000000000">+964 000 000 0000</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/in/username" rel="me">linkedin.com/in/username</a></li>
+                <li>Twitter: <a href="https://twitter.com/username" rel="me">@username</a></li>
+                <li>Instagram: <a href="https://instagram.com/447ei" rel="me">@447ei</a></li>
+              </ul>
+            </div>
+
+            <div class="card" style="padding:0; overflow:hidden">
+              <div style="padding:18px">
+                <h2 class="card__title">الموقع على الخريطة</h2>
+                <p class="card__text">يمكنك استبدال هذا العنصر بخريطة Google الفعلية لاحقًا.</p>
+              </div>
+              <div style="background:#0b1020;border-top:1px solid rgba(255,255,255,.06)">
+                <iframe title="خريطة" aria-label="خريطة" width="100%" height="260" style="border:0; display:block"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://maps.google.com/maps?q=Baghdad&z=12&output=embed"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding:18px;margin-top:16px">
+          <h2 class="card__title">تفعيل EmailJS (قيم وهمية مؤقتًا)</h2>
+          <p class="card__text">تم تضمين الشفرة أدناه وتعمل بقيم وهمية. عند تجهيز القيم الحقيقية، استبدلها مباشرة.</p>
+          <ul style="margin:0; padding-inline-start:18px; color:#cbd5e1">
+            <li>PUBLIC_KEY: PUBLIC_DEMO_KEY</li>
+            <li>SERVICE_ID: service_demo</li>
+            <li>TEMPLATE_ID: template_demo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>Ibeto</strong>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+      </div>
+      <ul class="social">
+        <li><a href="https://linkedin.com/in/username" aria-label="LinkedIn" rel="me">LinkedIn</a></li>
+        <li><a href="https://twitter.com/username" aria-label="Twitter" rel="me">@username</a></li>
+        <li><a href="https://instagram.com/447ei" aria-label="Instagram" rel="me">@447ei</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+
+  <!-- EmailJS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function(){
+      // استخدم القيم الوهمية الآن — استبدلها لاحقًا بالقيم الفعلية من EmailJS
+      const PUBLIC_KEY = "PUBLIC_DEMO_KEY";
+      const SERVICE_ID = "service_demo";
+      const TEMPLATE_ID = "template_demo";
+
+      if (window.emailjs) {
+        emailjs.init(PUBLIC_KEY);
+      }
+
+      const form = document.getElementById("contactForm");
+      const status = document.getElementById("formStatus");
+      const btn = document.getElementById("sendBtn");
+
+      function isValidEmail(v){
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      }
+
+      if (form) {
+        form.addEventListener("submit", function(e){
+          e.preventDefault();
+
+          // التحقق البسيط للحقول
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = document.getElementById("message").value.trim();
+          const honey = form.querySelector('input[name="website"]');
+
+          if (honey && honey.value.trim() !== "") {
+            // بوت — لا نرسل
+            return;
+          }
+
+          if (name.length < 2) {
+            status.textContent = "الرجاء إدخال اسم صالح (على الأقل حرفان).";
+            return;
+          }
+          if (!isValidEmail(email)) {
+            status.textContent = "الرجاء إدخال بريد إلكتروني صحيح.";
+            return;
+          }
+          if (message.length < 10) {
+            status.textContent = "الرسالة قصيرة جدًا (10 أحرف على الأقل).";
+            return;
+          }
+
+          status.textContent = "جاري الإرسال...";
+          btn.disabled = true;
+
+          if (!window.emailjs) {
+            status.textContent = "تعذّر تحميل EmailJS. تحقق من الاتصال.";
+            btn.disabled = false;
+            return;
+          }
+
+          emailjs.send(SERVICE_ID, TEMPLATE_ID, {
+            from_name: name,
+            reply_to: email,
+            message: message
+          }).then(function(){
+            status.textContent = "تم إرسال الرسالة بنجاح.";
+            form.reset();
+          }).catch(function(err){
+            console.error(err);
+            status.textContent = "حدث خطأ أثناء الإرسال. حاول مرة أخرى.";
+          }).finally(function(){
+            btn.disabled = false;
+          });
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

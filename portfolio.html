@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ibeto | معرض الأعمال</title>
+  <meta name="description" content="مشاريعي المنجزة مع تفاصيل الأدوات والتحديات والنتائج." />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الرئيسية">Ibeto</a>
+      <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">القائمة</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">نبذة عني</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html" class="is-active">الأعمال</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">معرض الأعمال — Ibeto</h1>
+
+        <div class="card" style="margin-bottom:16px;">
+          <div style="padding:12px; display:flex; gap:8px; flex-wrap:wrap;">
+            <button class="btn btn--ghost" data-filter="all">الكل</button>
+            <button class="btn btn--ghost" data-filter="design">تصميم</button>
+            <button class="btn btn--ghost" data-filter="dev">برمجة</button>
+            <button class="btn btn--ghost" data-filter="writing">كتابة</button>
+          </div>
+        </div>
+
+        <div class="grid" id="portfolioGrid">
+          <article id="project-1" class="card" data-cat="dev">
+            <img src="assets/img/placeholder-1.webp" alt="معاينة مشروع برمجي 1" loading="lazy" width="400" height="300" />
+            <h3 class="card__title">مشروع برمجي 1</h3>
+            <p class="card__text">HTML/CSS/JS — تحسين الأداء وتخفيض وقت التحميل إلى 2.8 ثانية.</p>
+            <p><a href="#" class="btn btn--primary" aria-label="فتح مشروع برمجي 1">رابط المشروع</a></p>
+          </article>
+
+          <article id="project-2" class="card" data-cat="design">
+            <img src="assets/img/placeholder-2.webp" alt="تصميم واجهات لتطبيق 2" loading="lazy" width="400" height="300" />
+            <h3 class="card__title">تصميم واجهات 2</h3>
+            <p class="card__text">نظام ألوان متباين، خطوط مقروءة، وتحسين تجربة المستخدم.</p>
+            <p><a href="#" class="btn btn--primary" aria-label="عرض نماذج التصميم للمشروع 2">عرض النماذج</a></p>
+          </article>
+
+          <article id="project-3" class="card" data-cat="writing">
+            <img src="assets/img/placeholder-3.webp" alt="محتوى تسويقي لموقع 3" loading="lazy" width="400" height="300" />
+            <h3 class="card__title">كتابة محتوى 3</h3>
+            <p class="card__text">محتوى متوافق مع SEO وتحويلات أعلى.</p>
+            <p><a href="#" class="btn btn--primary" aria-label="قراءة المزيد عن كتابة محتوى 3">اقرأ المزيد</a></p>
+          </article>
+
+          <article id="project-4" class="card" data-cat="dev">
+            <img src="assets/img/placeholder-1.webp" alt="مشروع برمجي 4" loading="lazy" width="400" height="300" />
+            <h3 class="card__title">مشروع برمجي 4</h3>
+            <p class="card__text">لوحة تحكم تفاعلية وإتاحة وصول محسّنة.</p>
+            <p><a href="#" class="btn btn--primary" aria-label="فتح مشروع برمجي 4">رابط المشروع</a></p>
+          </article>
+
+          <article id="project-5" class="card" data-cat="design">
+            <img src="assets/img/placeholder-2.webp" alt="تصميم هوية بصرية 5" loading="lazy" width="400" height="300" />
+            <h3 class="card__title">تصميم هوية 5</h3>
+            <p class="card__text">هوية متكاملة وشعارات متجاوبة.</p>
+            <p><a href="#" class="btn btn--primary" aria-label="عرض الهوية للمشروع 5">عرض الهوية</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">شهادات العملاء</h2>
+        <div class="cards">
+          <blockquote class="card">
+            <p class="card__text">"تنفيذ سريع وجودة عالية، الموقع أصبح أسرع وأكثر جمالًا."</p>
+            <footer>— عميل 1</footer>
+          </blockquote>
+          <blockquote class="card">
+            <p class="card__text">"تعاون ممتاز وأفكار مبتكرة حسّنت تجربة المستخدم."</p>
+            <footer>— عميل 2</footer>
+          </blockquote>
+          <blockquote class="card">
+            <p class="card__text">"التزام بالمواعيد واحترافية في التفاصيل."</p>
+            <footer>— عميل 3</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>اسمك الكامل</strong>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+      </div>
+      <ul class="social">
+        <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+  <script>
+    // Simple filter
+    const grid = document.getElementById('portfolioGrid');
+    const btns = document.querySelectorAll('[data-filter]');
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const cat = btn.getAttribute('data-filter');
+        grid.querySelectorAll('.card').forEach(card => {
+          const match = cat === 'all' || card.getAttribute('data-cat') === cat;
+          card.style.display = match ? '' : 'none';
+        });
+        btns.forEach(b => b.classList.remove('btn--primary'));
+        btn.classList.add('btn--primary');
+      });
+    });
+  </script>
+</body>
+</html>

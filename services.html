@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ibeto | الخدمات والمهارات</title>
+  <meta name="description" content="الخدمات التي أقدمها، المهارات مع نسب الإتقان، والشهادات." />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الرئيسية">Ibeto</a>
+      <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">القائمة</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">نبذة عني</a></li>
+          <li><a href="services.html" class="is-active">الخدمات</a></li>
+          <li><a href="portfolio.html">الأعمال</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title">الخدمات — Ibeto</h1>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🧩</div>
+            <h3 class="card__title">تطوير مواقع</h3>
+            <p class="card__text">مواقع احترافية سريعة ومتجاوبة باستخدام HTML, CSS, JS، مع تحسين الأداء وSEO.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">📱</div>
+            <h3 class="card__title">تطبيقات الهواتف</h3>
+            <p class="card__text">تطوير تطبيقات Mobile خفيفة وعملية تركّز على تجربة المستخدم والأداء.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🎨</div>
+            <h3 class="card__title">تصميم واجهات</h3>
+            <p class="card__text">تصميم UI/UX يركز على بساطة الاستخدام وجاذبية العرض ودعم العربية.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">المهارات التقنية</h2>
+        <div class="card" style="padding:0">
+          <div style="padding:18px">
+            <div class="skill"><strong>HTML/CSS</strong> — 90%</div>
+            <div class="bar"><span style="width:90%"></span></div>
+
+            <div class="skill"><strong>JavaScript</strong> — 85%</div>
+            <div class="bar"><span style="width:85%"></span></div>
+
+            <div class="skill"><strong>Mobile Apps</strong> — 80%</div>
+            <div class="bar"><span style="width:80%"></span></div>
+
+            <div class="skill"><strong>Mobile Apps</strong> — 80%</div>
+            <div class="bar"><span style="width:80%"></span></div>
+
+            <div class="skill"><strong>Responsive Design</strong> — 92%</div>
+            <div class="bar"><span style="width:92%"></span></div>
+
+            <div class="skill"><strong>SEO Basics</strong> — 80%</div>
+            <div class="bar"><span style="width:80%"></span></div>
+
+            <div class="skill"><strong>Mobile Apps</strong> — 80%</div>
+            <div class="bar"><span style="width:80%"></span></div>
+          </div>
+        </div>
+        <style>
+          .skill{margin:8px 0;color:#cbd5e1}
+          .bar{background:rgba(255,255,255,.08);height:10px;border-radius:999px;overflow:hidden;margin-bottom:12px}
+          .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--color-primary),#5fb3ff)}
+        </style>
+        <div class="card" style="margin-top:16px;padding:18px">
+          <h2 class="card__title">الشهادات والدورات</h2>
+          <ul style="margin:0; padding-inline-start:18px; color:#cbd5e1">
+            <li>شهادة تطوير الويب — منصة X</li>
+            <li>دورة Responsive Web Design — منصة Y</li>
+            <li>ورشة ممارسات SEO الأساسية — منصة Z</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title">الشهادات والدورات</h2>
+        <ul>
+          <li>شهادة تطوير الويب — منصة X</li>
+          <li>دورة تحسين الأداء — منصة Y</li>
+          <li>دورة تصميم واجهات — منصة Z</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>Ibeto</strong>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+      </div>
+      <ul class="social">
+        <li><a href="https://linkedin.com/in/username" aria-label="LinkedIn" rel="me">لينكدإن</a></li>
+        <li><a href="https://twitter.com/username" aria-label="Twitter" rel="me">تويتر</a></li>
+        <li><a href="https://instagram.com/447ei" aria-label="Instagram" rel="me">إنستغرام</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+</body>
+</html>

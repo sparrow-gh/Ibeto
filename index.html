@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ibeto | الرئيسية</title>
+  <meta name="description" content="الموقع الشخصي — نبذة، خدمات، أعمال، مدونة، وتواصل." />
+  <meta property="og:title" content="اسمك الكامل — الموقع الشخصي" />
+  <meta property="og:description" content="مطور/مصمم يقدم خدمات وأعمال مميزة." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1e90ff" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <style>
+    /* تحسين مخصص للصفحة الرئيسية */
+    .hero .badge{display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);color:#cbd5e1;
+      padding:6px 10px;border-radius:999px;font-size:12px;margin-bottom:10px}
+    .mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .mini-gallery img{border-radius:10px;border:1px solid rgba(255,255,255,.06);transition:transform .3s var(--ease)}
+    .mini-gallery a:hover img{transform:translateY(-3px)}
+    .stats{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .stat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);padding:8px 12px;border-radius:10px;color:#cbd5e1;font-size:14px}
+    @media(max-width:600px){.mini-gallery{grid-template-columns:repeat(2,1fr)}}
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">تخطي إلى المحتوى</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="الانتقال إلى الرئيسية">Ibeto</a>
+      <nav class="nav" role="navigation" aria-label="التنقل الرئيسي">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">القائمة</button>
+        <ul id="navMenu" class="nav__menu">
+          <li><a href="index.html" class="is-active">الرئيسية</a></li>
+          <li><a href="about.html">نبذة عني</a></li>
+          <li><a href="services.html">الخدمات</a></li>
+          <li><a href="portfolio.html">الأعمال</a></li>
+          <li><a href="blog.html">المدونة</a></li>
+          <li><a href="contact.html">تواصل</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <!-- HERO مُحسَّن -->
+    <section class="hero section reveal">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="badge">متاح للتعاون الحر</span>
+          <h1 class="hero__title">مطور ويب وتطبيقات الهواتف المحمولة</h1>
+          <p class="hero__subtitle">أحوّل الأفكار إلى تطبيقات ومواقع عملية وسريعة الاستجابة.</p>
+          <p class="hero__text">أنا Ibeto، أعمل على بناء حلول رقمية عصرية تركز على الأداء وتجربة المستخدم، باستخدام تقنيات الويب وMobile.</p>
+          <div class="stats">
+            <div class="stat">+5 سنوات خبرة</div>
+            <div class="stat">+20 مشروعًا ناجحًا</div>
+            <div class="stat">زمن تحميل < 3 ثوانٍ</div>
+          </div>
+          <div class="hero__cta" style="margin-top:14px">
+            <a class="btn btn--primary" href="about.html">تعرف علي أكثر</a>
+            <a class="btn btn--ghost" href="portfolio.html">شاهد أعمالي</a>
+            <a class="btn btn--ghost" href="contact.html">تواصل معي</a>
+          </div>
+        </div>
+        <div class="hero__media">
+          <img src="assets/img/profile-placeholder.png" alt="صورة شخصية" loading="lazy" width="480" height="480" />
+        </div>
+      </div>
+    </section>
+
+    <!-- مهارات مختصرة -->
+    <section class="features section reveal">
+      <div class="container">
+        <h2 class="section__title">أبرز المهارات</h2>
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">💡</div>
+            <h3 class="card__title">تصميم واجهات</h3>
+            <p class="card__text">تصاميم نظيفة مع تجربة استخدام مريحة، ودعم كامل للعربية.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">⚙️</div>
+            <h3 class="card__title">تطوير واجهات</h3>
+            <p class="card__text">HTML, CSS, JS مع تحسين الأداء وإتاحة الوصول.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon" aria-hidden="true">🚀</div>
+            <h3 class="card__title">تحسين السرعة</h3>
+            <p class="card__text">تحميل سريع أقل من 3 ثوانٍ عبر تحسين الصور والموارد.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- معرض مصغّر -->
+    <section class="highlight section reveal">
+      <div class="container">
+        <h2 class="section__title">أعمال مختارة</h2>
+        <div class="mini-gallery">
+          <a href="portfolio.html#project-1" aria-label="مشروع 1"><img src="assets/img/placeholder-1.webp" alt="معاينة مشروع 1" loading="lazy" width="360" height="240" /></a>
+          <a href="portfolio.html#project-2" aria-label="مشروع 2"><img src="assets/img/placeholder-2.webp" alt="معاينة مشروع 2" loading="lazy" width="360" height="240" /></a>
+          <a href="portfolio.html#project-3" aria-label="مشروع 3"><img src="assets/img/placeholder-3.webp" alt="معاينة مشروع 3" loading="lazy" width="360" height="240" /></a>
+        </div>
+        <div style="margin-top:16px">
+          <a class="btn btn--primary" href="portfolio.html">استعرض كل الأعمال</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <strong>Ibeto</strong>
+        <p>© <span id="year"></span> جميع الحقوق محفوظة.</p>
+      </div>
+      <ul class="social">
+        <li><a href="https://linkedin.com/in/username" aria-label="LinkedIn" rel="me">لينكدإن</a></li>
+        <li><a href="https://twitter.com/username" aria-label="Twitter" rel="me">تويتر</a></li>
+        <li><a href="https://instagram.com/447ei" aria-label="Instagram" rel="me">إنستغرام</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js" defer></script>
+  <script>
+    // إظهار تدريجي للأقسام عند التمرير باستخدام IntersectionObserver
+    (function(){
+      const els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(el => el.classList.add('is-visible'));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('is-visible');
+            io.unobserve(e.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -10% 0px' });
+      els.forEach(el => io.observe(el));
+    })();
+  </script>
+</body>
+</html>
